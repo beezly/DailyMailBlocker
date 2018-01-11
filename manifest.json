@@ -7,7 +7,7 @@
 		"128": "icons/icon128.png"
 	},
 	"manifest_version": 2,
-	"description": "Blocks dailymail.co.uk links, because you don't need that rubbish in your life.",
+	"description": "Blocks dailymail.co.uk and other DMG Media links, because you don't need that rubbish in your life.",
 	"content_scripts": [
 		{
 			"matches": [
@@ -16,7 +16,21 @@
 				"*://mailonsunday.co.uk/*",
 				"*://*.mailonsunday.co.uk/*",
 				"*://mymail.co.uk/*",
-				"*://*.mymail.co.uk/*"
+				"*://*.mymail.co.uk/*",
+                                "*://thisismoney.co.uk/*",
+                                "*://*.thisismoney.co.uk/*",
+                                "*://metro.co.uk/*",
+                                "*://*.metro.co.uk/*",
+                                "*://wowcher.co.uk/*",
+                                "*://*.wowcher.co.uk/*",
+                                "*://jobsite.co.uk/*",
+                                "*://*.jobsite.co.uk/*",
+                                "*://zoopla.co.uk/*",
+                                "*://*.zoopla.co.uk/*",
+                                "*://primelocation.com/*",
+                                "*://www.primelocation.com/*",
+                                "*://jobrapido.com/*",
+                                "*://*.jobrapido.com/*"
 			],
 			"js": [
 				"script.js"
